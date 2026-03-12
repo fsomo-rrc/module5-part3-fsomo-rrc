@@ -21,6 +21,7 @@ jobs:
         env:
           MONGO_INITDB_ROOT_USERNAME: root  ## Create an admin user
           MONGO_INITDB_ROOT_PASSWORD: example
+          FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
         options: >-
           --health-cmd "mongosh --eval 'db.runCommand(\"ping\").ok'"
           --health-interval 10s
