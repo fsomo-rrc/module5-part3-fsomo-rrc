@@ -50,7 +50,7 @@ jobs:
         env:
           MONGO_URI: "mongodb://root:example@localhost:27017/test_db?authSource=admin"
           FLASK_ENV: "testing" # Put the app in testing mode if referenced by app code
-        run: pytest -q tests/  # Run all tests under backend/tests with quiet output
+        run: pytest -q test/  # Run all tests under backend/tests with quiet output
 
 
 
