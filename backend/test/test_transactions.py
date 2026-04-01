@@ -2,8 +2,8 @@ import pytest
 import mongomock
 from bson.objectid import ObjectId
 
-import backend.app as app_module
-from backend.app import app
+import app as app_module
+from app import
 
 class MockMongo:
     def __init__(self):
