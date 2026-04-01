@@ -48,6 +48,7 @@ jobs:
       # NOTE: your tests currently patch Mongo with mongomock in conftest.py,
       # so this is mostly for parity/local runs and won’t be used by the tests.
         env:
+          PYTHONPATH: ${{ github.workspace }}
           MONGO_URI: "mongodb://root:example@localhost:27017/test_db?authSource=admin"
           FLASK_ENV: "testing" # Put the app in testing mode if referenced by app code
         run: pytest -q test/  # Run all tests under backend/tests with quiet output
