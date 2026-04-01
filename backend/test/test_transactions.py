@@ -3,7 +3,7 @@ import mongomock
 from bson.objectid import ObjectId
 
 import app as app_module
-from app import
+from app import app
 
 class MockMongo:
     def __init__(self):
