@@ -46,4 +46,4 @@ jobs:
         env:
           MONGO_URI: "mongodb://root:example@localhost:27017/test_db?authSource=admin"
           FLASK_ENV: "testing"
-        run: pytest -q tests/
+        run: pytest -q test/
