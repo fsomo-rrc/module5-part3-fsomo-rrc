@@ -120,5 +120,26 @@ def logout():
     flash('Logged out', 'info')
     return redirect(url_for('login'))
 
+@app.route('/login', methods=['GET', 'POST'])
+def login_alias():
+    return login()
+
+@app.route('/register', methods=['GET', 'POST'])
+def register_alias():
+    return register()
+
+@app.route('/dashboard')
+def dashboard_alias():
+    return dashboard()
+
+@app.route('/deposit', methods=['POST'])
+def deposit_alias():
+    return deposit()
+
+@app.route('/withdraw', methods=['POST'])
+def withdraw_alias():
+    return withdraw()
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
